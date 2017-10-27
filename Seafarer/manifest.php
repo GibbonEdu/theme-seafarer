@@ -22,7 +22,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //Basic variables
 $name="Seafarer" ;
 $description="For ocean lovers" ;
-$version="1.1.00" ;
+$version="1.2.00" ;
 $author="Max Sze" ;
 $url="" ;
 ?>
