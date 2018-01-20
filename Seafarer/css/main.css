@@ -1369,7 +1369,8 @@ table tr.heading:first-child td:last-child {
 }
 
 /* Usability tweak to make large data tables like User Permissions easier to read */
-table.rowHighlight tr:not(.break):hover td {
+table.rowHighlight tr:not(.break):hover td,
+table.columnHighlight .hover:not(:first-child) {
 	background: #EDF7FF !important;
 }
 
@@ -1432,7 +1433,7 @@ input[name*="phone"] ~ .LV_invalid {
 }
 
 .floatNone {
-	float:none;
+	float:none!important;
 }
 
 .max-upload {
@@ -1446,6 +1447,10 @@ input[name*="phone"] ~ .LV_invalid {
 }
 #content-wide .smallIntBorder {
   max-width: 1052px;
+}
+
+.matchHighlight table {
+    float: right;
 }
 
 .matchHighlight > td {
@@ -1507,7 +1512,7 @@ fieldset {
 }
 
 /* Fixes an odd colspan-related width bug in Chrome */
-td.fullWidth {
+td.fullWidth[colspan] {
     width: auto;
 }
 
